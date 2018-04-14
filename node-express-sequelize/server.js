@@ -7,10 +7,28 @@ var User = sequelize.define('User', {
   username: Sequelize.STRING
 });
 
+
+var x = Sequelize.User()
+app.get('/users', function(x, err){
+	if(){
+		////=====
+	} else {
+		///=====
+	}
+
+})
+
 /*  Create a '/users' route that responds to 
     a GET request with all users in the database */
 
+app.post('users', function(){
+	if( err ){
+		request.send( err )
+	} else {
+		request.send( data )
+	}
 
+})
 
 module.exports = { 
   app: app,

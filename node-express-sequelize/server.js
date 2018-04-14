@@ -11,11 +11,15 @@ var User = sequelize.define('User', {
 
 //req,res
 var x = Sequelize.User()
-app.get('/users', function(x, err){
-	if(){
-		////=====
+
+app.get('/users', function(x, err){ //get all the users in the /users repository 
+	if( err ){ //if error return err
+		console.log( err )
+		request.send( err )
 	} else {
-		///=====
+		console.log ( 'SUCCESSFUL' )
+		request.send ( x )
+		// if there is data in users get that data 
 	}
 
 })

@@ -11,7 +11,7 @@ var User = sequelize.define('User', {
 
 //req,res
 var x = Sequelize.User()
-
+//need to insert request and response handlers
 app.get('/users', function(x, err){ //get all the users in the /users repository 
 	if( err ){ //if error return err
 		console.log( err )
@@ -27,6 +27,8 @@ app.get('/users', function(x, err){ //get all the users in the /users repository
 /*  Create a '/users' route that responds to 
     a GET request with all users in the database */
 //req,res
+//need to insert request and response handlers
+//post all user data that was found
 app.post('/users', function(){
 	if( err ){
 		console.log('users POST has returned an ERR')
